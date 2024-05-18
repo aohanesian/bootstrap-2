@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact - Small Business</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/fontawesome-all.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Small Business</a>
+        <button class="navbar-toggler" type="button" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-label="Toggle navigation" aria-expanded="false" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collape navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+                </li>
+            </ul>
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownLanguage"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change language
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                    <a href="https://google.com/language" class="dropdown-item">English</a>
+                    <a href="https://google.com/language" class="dropdown-item">Ukrainian</a>
+                    <a href="https://google.com/language" class="dropdown-item">Spanish</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container my-3 my-sm-5">
+    <h1 class="text-center mb-sm-4 display-1">Contact</h1>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2>Address:</h2>
+            <address>
+                <strong>Company name</strong><br>
+                Street name<br>
+                ZIP code and city<br>
+                <i class="fas fa-fw fa-phone"></i> <a href="tel:+1234567890">+1234567890</a><br>
+                <i class="fas fa-fw fa-envelope"></i> <a href="mailto:info@gmail.com">info@gmail.com</a>
+            </address>
+        </div>
+        <div class="col-12 col-md-6">
+            <h2>Opening hours:</h2>
+            <p>Monday-Thursday: <span class="float-end">10 am - 6 pm</span><br>
+                Friday-Saturday: <span class="float-end">10 am - 10 pm</span><br>
+                Sunday: <span class="float-end">10 am - 8 pm</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+            <h2>Send us a message:</h2>
+            <form>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="text" id="name" class="form-control" name="name" placeholder="Name"
+                                       required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" id="email" class="form-control" name="email" placeholder="Email"
+                                       required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="mb-3">
+                            <label for="telephone" class="form-label">Telephone</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                <input type="text" id="telephone" class="form-control" name="telephone"
+                                       placeholder="Telephone"
+                                       required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="mb-3">
+                            <label for="department" class="form-label">Department:</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-home"></i></span>
+                                <select id="department" class="form-select" name="department"
+                                        aria-labelledby="department-help-block" required>
+                                    <option value="">- select here -</option>
+                                    <option value="business">Business</option>
+                                    <option value="sale">Sale</option>
+                                    <option value="support">Support</option>
+                                </select>
+                            </div>
+                            <small id="department-help-block" class="form-text">Please select the recipient to your
+                                message.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                        <textarea id="message" class="form-control" name="message" rows="5"
+                                  placeholder="Write your mesage here..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h2>Where to find us:</h2>
+            <div class="ratio ratio-4x3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2865.5511634546106!2d30.745462421019305!3d46.43274594509251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6339053e37adb%3A0x210fb6543ccfa41c!2z0J3QvtCy0LAg0J_QvtGI0YLQsC4g0J_QvtGI0YLQvtCy0LUg0LLRltC00LTRltC70LXQvdC90Y8g4oSWMTggKNC00L4gMzAg0LrQsykg0LwuINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1691361535943!5m2!1sru!2sua"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="small bg-light">
+    <div class="container py-3 py-sm-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <h6>Information</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#0">Legal information</a></li>
+                    <li><a href="#0">Job opportunities</a></li>
+                    <li><a href="#0">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <h6>Follow us</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#0"> <i class="fab fa-fw fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#0"> <i class="fab fa-fw fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#0"> <i class="fab fa-fw fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#0"> <i class="fab fa-fw fa-youtube"></i>YouTube</a></li>
+                    <li><a href="#0"> <i class="fab fa-fw fa-linkedin"></i>LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <h6>Our location</h6>
+                <address>
+                    <strong>Company name</strong><br>
+                    Street Name<br>
+                    ZIP Code and city<br>
+                    <i class="fas fa-fw fa-phone"></i> <a href="tel:+1234567890">+1234567890</a><br>
+                    <i class="fas fa-fw fa-envelope"></i> <a href="mailto:info@gmail.com">info@gmail.com</a><br>
+                </address>
+            </div>
+        </div>
+        <ul class="list-inline mt-2 mb-0 text-center">
+            <li class="list-inline-item">&copy; 2023 Company name</li>
+            <li class="list-inline-item">All right reserved.</li>
+        </ul>
+    </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
